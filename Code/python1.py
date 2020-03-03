@@ -175,17 +175,16 @@ def five(input):
 
 
 def six(input):
-    for i in range(str(input)):
-        if "ie" in i:  
-            return True 
-        elif "ei" in i:
-            return False                         
-        elif "cie" in i:
-            return False 
-        elif "cei" in i:
-            return True
-        else:
-            return six
+	if "cie" in input:
+		return False 
+	elif "ie" in input:  
+		return True 
+	elif "cei" in input:
+		return True
+	elif "ei" in input:
+		return False                         
+	else:
+		return six
 
 
 	# <QUESTION 7>
